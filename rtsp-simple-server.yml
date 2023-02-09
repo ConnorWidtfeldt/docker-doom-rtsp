@@ -1,0 +1,9 @@
+paths:
+  doom:
+    runOnDemand: >-
+      ffmpeg -hide_banner -nostats
+      -f x11grab -draw_mouse 0 -i :22 
+      -f rtsp -rtsp_transport tcp 
+      rtsp://localhost:$RTSP_PORT/$RTSP_PATH
+    runOnDemandRestart: yes
+    runOnDemandCloseAfter: 2s
