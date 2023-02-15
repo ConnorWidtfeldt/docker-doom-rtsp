@@ -10,7 +10,6 @@ RUN wget https://github.com/aler9/rtsp-simple-server/releases/download/v${RTSP_S
 
 COPY --from=mattipaksula/doom1wad /doom1.wad /doom1.wad
 
-COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 COPY doom.cfg /doom.cfg
 COPY rtsp-simple-server.yml /rtsp-simple-server.yml
 COPY supervisord.conf /supervisord.conf

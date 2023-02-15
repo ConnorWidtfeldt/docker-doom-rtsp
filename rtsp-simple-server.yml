@@ -1,3 +1,4 @@
+rtspAddress: :8554
 paths:
   doom:
     runOnDemand: >-
