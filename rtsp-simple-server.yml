@@ -1,4 +1,3 @@
-rtspAddress: :8554
 paths:
   doom:
     runOnDemand: >-
@@ -8,3 +7,12 @@ paths:
       rtsp://localhost:$RTSP_PORT/$RTSP_PATH
     runOnDemandRestart: yes
     runOnDemandCloseAfter: 2s
+
+# rtsp config
+rtspAddress: :8554
+protocols: [tcp]
+
+# disable all protocols other than rtsp
+rtmpDisable: yes
+hlsDisable: yes
+webrtcDisable: yes
